@@ -1,0 +1,153 @@
+/* Основные переменные */
+:root {
+  --primary-color: #2196f3;
+  --secondary-color: #ffffff;
+  --dark-color: #212121;
+  --text-color: #757575;
+  --bg-color: #f5f4fa;
+  --accent-color: #2196f3;
+  --footer-bg: #2f303a;
+}
+
+/* Сброс стилей */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--dark-color);
+  background-color: #fff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Заголовки */
+h1, h2, h3 {
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+/* Кнопка */
+.button {
+  display: inline-block;
+  padding: 10px 24px;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 250ms ease;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #1976d2;
+}
+
+/* Хедер */
+.header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #ececec;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 0;
+}
+
+.nav-list {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.nav-link {
+  color: var(--dark-color);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 250ms ease;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--primary-color);
+}
+
+/* Герой */
+.hero {
+  background-color: var(--footer-bg);
+  color: var(--secondary-color);
+  text-align: center;
+  padding: 100px 0;
+}
+
+.hero-title {
+  font-size: 44px;
+  margin-bottom: 30px;
+}
+
+/* Услуги / Особенности */
+.features {
+  padding: 94px 0;
+}
+
+.features-list {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.features-item {
+  flex-basis: calc((100% - 60px) / 3);
+}
+
+/* Портфолио */
+.portfolio {
+  padding: 94px 0;
+}
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  list-style: none;
+}
+
+/* Футер */
+.footer {
+  background-color: var(--footer-bg);
+  color: var(--secondary-color);
+  padding: 60px 0;
+}
+
+.footer .logo,
+.footer .contacts {
+  margin-bottom: 20px;
+}
+
+.contacts a {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  transition: color 250ms ease;
+}
+
+.contacts a:hover,
+.contacts a:focus {
+  color: var(--secondary-color);
+}
